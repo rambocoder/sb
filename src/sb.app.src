@@ -1,0 +1,16 @@
+{application, sb,
+    [
+    {description, "Simple Bridge sample for Cowboy"},
+    {vsn, "0.0.1"},
+    {registered, [
+        nitroge_sup
+        ]},
+    {modules, []},
+    {applications, [
+        kernel,
+        stdlib,
+        crypto
+            ]},
+    {mod, {nitrogen_app, []}},
+    {env, []}
+    ]}.

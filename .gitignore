@@ -1,0 +1,4 @@
+ebin/*.beam
+ebin/sb.app
+deps
+erl_crash.dump
