@@ -8,8 +8,7 @@
     {modules, []},
     {applications, [
         kernel,
-        stdlib,
-        crypto
+        stdlib
             ]},
     {mod, {nitrogen_app, []}},
     {env, []}

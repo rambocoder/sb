@@ -23,12 +23,13 @@ start_link() ->
 
 init([]) ->
     %% Start the Process Registry...
-    % application:start(nprocreg),
+    application:start(gproc),
 
     application:start(crypto),
     
     %% Start Cowboy...
     application:start(cowboy),
+    
     {ok, BindAddress} = {ok, "0.0.0.0"},
     {ok, Port} = {ok, 8080},
     {ok, ServerName} = {ok, nitrogen},
